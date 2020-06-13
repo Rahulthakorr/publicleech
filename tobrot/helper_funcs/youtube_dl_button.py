@@ -39,7 +39,7 @@ async def youtube_dl_call_back(bot, update):
     if current_user_id != current_touched_user_id:
         await bot.answer_callback_query(
             callback_query_id=update.id,
-            text="who are you? 🤪🤔🤔🤔",
+            text="who are you? ðŸ¤ªðŸ¤”ðŸ¤”ðŸ¤”",
             show_alert=True,
             cache_time=0
         )
@@ -87,7 +87,7 @@ async def youtube_dl_call_back(bot, update):
     if "noyes.in" in youtube_dl_url or "tor.checker.in" in youtube_dl_url:
         await bot.edit_message_text(
             chat_id=update.message.chat.id,
-            text="😡😡 <i>please do not abuse this <u>FREE</u> service</i> 🌚",
+            text="ðŸ˜¡ðŸ˜¡ <i>Please do not abuse this <u>FREE</u> service</i> ðŸŒš",
             message_id=update.message.message_id
         )
         return
@@ -215,7 +215,7 @@ async def youtube_dl_call_back(bot, update):
             message_id = final_response[key_f_res_se]
             channel_id = str(AUTH_CHANNEL)[4:]
             private_link = f"https://t.me/c/{channel_id}/{message_id}"
-            message_to_send += "👉 <a href='"
+            message_to_send += "ðŸ‘‰ <a href='"
             message_to_send += private_link
             message_to_send += "'>"
             message_to_send += local_file_name
@@ -224,9 +224,9 @@ async def youtube_dl_call_back(bot, update):
         if message_to_send != "":
             mention_req_user = f"<a href='tg://user?id={user_id}'>Your Requested Files</a>\n\n"
             message_to_send = mention_req_user + message_to_send
-            message_to_send = message_to_send + "\n\n" + "#uploads"
+            message_to_send = message_to_send + "\n\n" + "© @TGPublicLeech #Uploads"
         else:
-            message_to_send = "<i>FAILED</i> to upload files. 😞😞"
+            message_to_send = "<i>FAILED</i> to upload files. ðŸ˜žðŸ˜ž"
         await update.message.reply_to_message.reply_text(
             text=message_to_send,
             quote=True,
