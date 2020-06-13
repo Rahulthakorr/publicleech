@@ -140,6 +140,6 @@ async def extract_youtube_dl_formats(url, user_working_dir):
             break
         reply_markup = pyrogram.InlineKeyboardMarkup(inline_keyboard)
         # LOGGER.info(reply_markup)
-        succss_mesg = """Select the desired format: 👇
-<u>mentioned</u> <i>file size might be approximate</i>"""
+        succss_mesg = """Select the desired format: ðŸ‘‡
+<u>mentioned</u> <i>File size might be approximate</i>"""
         return succss_mesg, reply_markup
